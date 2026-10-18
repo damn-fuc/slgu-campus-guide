@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" role="img" aria-labelledby="title desc">
+  <title id="title">沈阳理工大学校园导览示意图</title>
+  <desc id="desc">以校园手绘地图为布局参考绘制的交互示意底图，含北门、图书馆、兵器广场、兵器博物馆和运动场等位置。地点与道路位置需实地核对。</desc>
+  <defs>
+    <pattern id="paper-grain" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="4" cy="7" r=".55" fill="#9f9b83" opacity=".18"/><circle cx="18" cy="21" r=".65" fill="#b0a88f" opacity=".13"/><path d="M0 13h26" stroke="#d4d0bf" stroke-width=".3" opacity=".3"/></pattern>
+    <pattern id="walkway" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 12 12 0" stroke="#e9e3d1" stroke-width="1"/></pattern>
+    <linearGradient id="museum-glass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d8e5e1"/><stop offset="1" stop-color="#93adb1"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#62715c" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1100" height="720" fill="#e9e8d8"/>
+  <rect width="1100" height="720" fill="url(#paper-grain)"/>
+  <path d="M65 84 197 93 284 110 421 100 517 115 636 99 763 106 900 91 1032 114 1055 190 1037 296 1050 393 1034 482 1041 585 1002 647 873 638 754 653 621 638 496 651 353 636 231 655 118 635 55 594 60 475 41 389 57 268 44 168Z" fill="#bed4ab" stroke="#9db390" stroke-width="4"/>
+  <path d="M73 95 194 103 278 119 418 110 521 125 637 109 756 116 897 102 1024 124 1040 193 1022 294 1037 395 1021 477 1028 582 992 631 871 625 752 640 622 625 495 638 354 623 234 642 125 621 68 585 73 474 54 389 69 270 57 170Z" fill="#cfe0bb"/>
+  <path d="M77 205H1023M72 336H1032M68 485H1026M190 118V620M345 111V630M501 119V627M660 112V632M818 111V627M963 115V620" fill="none" stroke="#d7d4c7" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M77 205H1023M72 336H1032M68 485H1026M190 118V620M345 111V630M501 119V627M660 112V632M818 111V627M963 115V620" fill="none" stroke="#fffdf6" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M82 270H959M104 419H986M255 123V596M424 124V602M579 123V602M741 121V604M895 123V603" fill="none" stroke="#e0dccd" stroke-width="13" stroke-linecap="round"/>
+  <path d="M82 270H959M104 419H986M255 123V596M424 124V602M579 123V602M741 121V604M895 123V603" fill="none" stroke="#fbfaf1" stroke-width="9" stroke-linecap="round"/>
+  <!-- teaching precinct -->
+  <g filter="url(#shadow)" fill="#c5d5d8" stroke="#6f929b" stroke-width="2">
+    <path d="M111 146h98v41h-98zM219 138h102v49H219zM112 217h117v39H112zM246 216h74v40h-74z"/>
+    <path d="M367 149h91v44h-91zM374 215h89v40h-89zM464 146h41v109h-41z"/>
+    <path d="M671 148h113v44H671zM678 214h109v42H678zM802 143h49v112h-49z"/>
+  </g>
+  <g fill="#e6d4ad" stroke="#b99563" stroke-width="2" filter="url(#shadow)">
+    <path d="M844 143h91v40h-91zM948 146h66v43h-66zM841 214h83v41h-83zM937 216h76v40h-76z"/>
+    <path d="M852 280h73v37h-73zM940 280h72v37h-72z"/>
+  </g>
+  <!-- central civic buildings -->
+  <g filter="url(#shadow)">
+    <path d="M457 241h167v79H457z" fill="#eef0e8" stroke="#66828c" stroke-width="3"/>
+    <path d="M471 252h139v16H471zM471 276h139v31H471z" fill="#bccdd0" stroke="#819ca1" stroke-width="1.5"/>
+    <path d="M486 282h7v25h-7zm18 0h7v25h-7zm18 0h7v25h-7zm18 0h7v25h-7zm18 0h7v25h-7zm18 0h7v25h-7zm18 0h7v25h-7z" fill="#f6f4e9"/>
+    <path d="M466 245 540 226l75 19" fill="#dde5df" stroke="#66828c" stroke-width="2"/>
+    <path d="M474 319h133v9H474z" fill="#f4f0e1" stroke="#aa9c7a"/>
+  </g>
+  <g filter="url(#shadow)" fill="#d1ded8" stroke="#6d8c8f" stroke-width="2">
+    <path d="M423 368h192v78H423zM440 357h158v18H440z"/>
+    <path d="M441 388h156v42H441z" fill="#e7e8dc"/>
+    <path d="M456 391h11v39h-11zm23 0h11v39h-11zm23 0h11v39h-11zm23 0h11v39h-11zm23 0h11v39h-11zm23 0h11v39h-11z" fill="#9db6b5"/>
+  </g>
+  <g fill="#c1d5d8" stroke="#6e919a" stroke-width="2" filter="url(#shadow)">
+    <path d="M682 357h145v54H682zM699 418h124v35H699zM846 367h42v78h-42z"/>
+    <path d="M145 377h118v49H145zM275 378h51v48h-51z"/>
+  </g>
+  <!-- admin and museum garden -->
+  <path d="M100 502h231v106H100z" fill="#dfb5a0" stroke="#c4836c" stroke-width="2" opacity=".9"/>
+  <g fill="#d4d6cc" stroke="#877e71" stroke-width="2" filter="url(#shadow)"><path d="M121 523h82v57h-82zM218 520h87v28h-87zM218 557h88v27h-88z"/></g>
+  <circle cx="133" cy="588" r="16" fill="#72b6c0" stroke="#e8f2e4" stroke-width="5"/>
+  <path d="M713 471c0-31 30-53 68-53h95c35 0 61 22 61 54v68c0 29-25 52-60 52h-99c-38 0-65-22-65-51z" fill="#f3dda8" stroke="#d2a962" stroke-width="2"/>
+  <!-- museum architecture -->
+  <g filter="url(#shadow)">
+    <path d="M756 494 801 470l71 8 29 28-35 45h-91z" fill="url(#museum-glass)" stroke="#54747d" stroke-width="3"/>
+    <path d="m756 494 45-24-5 81h-21zM801 470l71 8-4 15-68-7z" fill="#ecf1e8" stroke="#6e898d" stroke-width="2"/>
+    <path d="M818 488 876 495 852 542h-50z" fill="#bac9c6" stroke="#668189" stroke-width="2"/>
+    <path d="M802 500h11v42h-11zm22 2h8v40h-8zm22 3h7v37h-7z" fill="#78959a" opacity=".85"/>
+    <path d="M772 540h90l-9 9h-75z" fill="#657e81"/>
+  </g>
+  <!-- square and sculpture -->
+  <path d="M432 467h174v111H432z" fill="url(#walkway)" stroke="#acaa95" stroke-width="2"/>
+  <path d="M447 482h144v80H447z" fill="#e4e0cf" stroke="#b5ad91" stroke-width="1.5"/>
+  <path d="M519 538v-39l11-27 8 27v39m-21 0-9-23 8-15m27 38 10-22-9-15" fill="#68797a" stroke="#485e65" stroke-width="2"/>
+  <!-- water and sports -->
+  <path d="M322 586c26-18 52-12 74 2 25 15 51 5 71 11 20 6 32 18 39 30-24 9-50 15-73 11-28-5-43-25-71-21-18 2-28-8-40-33Z" fill="#86c5c9" stroke="#f2eee1" stroke-width="5"/>
+  <path d="M483 608c28-18 53-10 75 3 25 14 56 10 78 18 14 5 22 15 29 25-35 6-65 4-90-5-27-10-55-1-73-9-14-6-18-14-19-32Z" fill="#8ac8ca" stroke="#f2eee1" stroke-width="5"/>
+  <g>
+    <rect x="721" y="579" width="293" height="102" rx="42" fill="#d77568" stroke="#f5eee0" stroke-width="8"/>
+    <rect x="742" y="593" width="251" height="74" rx="31" fill="#d8a18c" stroke="#fff5e9" stroke-width="4"/>
+    <rect x="764" y="606" width="207" height="49" rx="6" fill="#79a887" stroke="#e7e9d1" stroke-width="3"/>
+    <path d="M867 607v47M764 630h207m-176-24v49m146-49v49" stroke="#eef2dd" stroke-width="2" opacity=".8"/>
+    <circle cx="867" cy="630" r="9" fill="none" stroke="#f6f4e7" stroke-width="2"/>
+    <path d="M1001 582v92" stroke="#e3d8bd" stroke-width="3"/>
+    <path d="M1020 591h-14v22h14m0 8h-14v22h14m0 8h-14v20h14" fill="#62a6ae" stroke="#eef0dc" stroke-width="3"/>
+  </g>
+  <!-- gate symbols -->
+  <g fill="#e8e5d6" stroke="#7d8f8c" stroke-width="2">
+    <path d="M514 89h68v26h-68zM525 72h46v17h-46z"/><path d="M514 640h68v28h-68zM525 625h46v15h-46z"/>
+  </g>
+  <path d="M526 111v27m13-27v27m13-27v27m13-27v27M526 639v-19m13 19v-19m13 19v-19m13 19v-19" stroke="#687e7d" stroke-width="3"/>
+  <!-- tree groups -->
+  <g stroke="#69906a" stroke-width="1.5">
+    <g fill="#6c9d6d"><circle cx="94" cy="124" r="8"/><circle cx="123" cy="134" r="7"/><circle cx="161" cy="126" r="8"/><circle cx="195" cy="128" r="7"/><circle cx="285" cy="130" r="8"/><circle cx="328" cy="126" r="7"/><circle cx="383" cy="129" r="8"/><circle cx="422" cy="132" r="7"/><circle cx="618" cy="132" r="8"/><circle cx="657" cy="131" r="7"/><circle cx="735" cy="130" r="8"/><circle cx="790" cy="129" r="7"/><circle cx="931" cy="130" r="8"/><circle cx="983" cy="136" r="7"/></g>
+    <g fill="#84aa76"><circle cx="88" cy="297" r="7"/><circle cx="105" cy="316" r="8"/><circle cx="325" cy="292" r="7"/><circle cx="359" cy="309" r="8"/><circle cx="393" cy="293" r="7"/><circle cx="632" cy="294" r="8"/><circle cx="649" cy="314" r="7"/><circle cx="794" cy="299" r="8"/><circle cx="818" cy="314" r="7"/><circle cx="926" cy="297" r="8"/><circle cx="988" cy="311" r="7"/></g>
+    <g fill="#5f8c68"><circle cx="83" cy="451" r="7"/><circle cx="117" cy="466" r="8"/><circle cx="352" cy="459" r="8"/><circle cx="390" cy="461" r="7"/><circle cx="633" cy="464" r="8"/><circle cx="667" cy="467" r="7"/><circle cx="921" cy="465" r="8"/><circle cx="974" cy="455" r="7"/><circle cx="688" cy="563" r="8"/><circle cx="696" cy="606" r="7"/><circle cx="676" cy="625" r="8"/><circle cx="615" cy="579" r="7"/><circle cx="314" cy="560" r="8"/><circle cx="293" cy="611" r="7"/><circle cx="100" cy="602" r="8"/></g>
+  </g>
+  <g fill="#466f58" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle" opacity=".9">
+    <text x="548" y="61">北门</text><text x="541" y="228">图书馆</text><text x="518" y="573">兵器广场</text><text x="831" y="565">兵器博物馆</text><text x="869" y="671">运动场</text><text x="184" y="602">行政区</text><text x="923" y="205">学生生活区</text>
+  </g>
+  <g fill="#bd4b36"><circle cx="548" cy="52" r="5"/><circle cx="814" cy="377" r="5"/></g>
+  <rect width="1100" height="720" fill="none" stroke="#f5f2e8" stroke-width="12"/>
+</svg>
+

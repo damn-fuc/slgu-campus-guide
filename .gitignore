@@ -1,0 +1,9 @@
+# Contest documents are submission guidance, not website content.
+/附件*.pdf
+
+# Operating system and editor files
+Thumbs.db
+.DS_Store
+desktop.ini
+*.tmp
+*.swp

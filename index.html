@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b34">
+  <meta name="description" content="沈阳理工大学校园与兵器博物馆数字导览">
+  <title>兵器寻迹 · 沈阳理工大学数字导览</title>
+  <link rel="icon" href="assets/icons/compass.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/content.js"></script>
+  <script defer src="scripts/app.js"></script>
+</head>
+<body>
+  <svg class="symbol-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5m7 7-7-7 7-7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4Zm12-2a6 6 0 0 1 0 8m2-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2.2 5.4-5.4 2.2 2.2-5.4 5.4-2.2Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22V5.5Zm0 0V19a3 3 0 0 1 3-3h13"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18c8 0 1-12 7-12"/></symbol>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="兵器寻迹首页" data-action="home">
+      <span class="brand-seal"><svg><use href="#i-compass"/></svg></span>
+      <span class="brand-copy"><b>兵器寻迹</b><small>沈阳理工大学 · 校园数字导览</small></span>
+    </a>
+    <div class="topbar-right">
+      <span class="topbar-note">一图读校园 · 一路见兵器</span>
+      <button class="top-home" type="button" data-action="home">返回首页</button>
+    </div>
+  </header>
+
+  <main id="home" class="home-screen">
+    <div class="home-shell">
+      <section class="home-copy" aria-labelledby="hero-title">
+        <div class="home-mark"><span class="mark-line"></span><span>校园文化 · 数字记忆</span></div>
+        <h1 id="hero-title">地图在手，<br>故事从脚下开始。</h1>
+        <p class="hero-description">从沈理工校园出发，循着地点读校史、看兵器；也可以亲手选一条路线，按自己的节奏逛校园。</p>
+        <div class="entry-cards">
+          <button class="entry-card entry-primary" type="button" data-action="start-guided">
+            <span class="entry-index">01 / 主题路线</span>
+            <span class="entry-title">跟我走<svg><use href="#i-arrow"/></svg></span>
+            <span class="entry-description">三条故事线，带你从校园地标走进兵器博物馆。</span>
+          </button>
+          <button class="entry-card entry-secondary" type="button" data-action="start-explore">
+            <span class="entry-index">02 / 自主探索</span>
+            <span class="entry-title">我想自己逛<svg><use href="#i-route"/></svg></span>
+            <span class="entry-description">从 44 个地图地点中选起点，安排自己的重点站。</span>
+          </button>
+        </div>
+        <div class="home-statline"><strong>44</strong><span>地图地点</span><i></i><strong>03</strong><span>主题路线</span><i></i><span>馆藏资料持续补充</span></div>
+      </section>
+
+      <section class="home-map" aria-label="沈阳理工大学校园手绘地图">
+        <div class="map-frame-top"><span><i></i> 沈阳理工大学校园图</span><span>手绘地图 · 位置待现场核实</span></div>
+        <div class="home-map-image">
+          <img src="assets/maps/campus-detailed-map.png" alt="沈阳理工大学编号校园地图，包含图书馆、教学楼、宿舍、体育场、兵器博物馆等地点">
+          <div class="home-map-stamp"><span>校</span><small>校园<br>导览</small></div>
+        </div>
+        <div class="map-frame-bottom"><span>从一张地图认识校园</span><b>沈理工 · 校园记忆图</b></div>
+      </section>
+    </div>
+    <footer class="home-footer"><span>兵器寻迹 / CAMPUS STORY ATLAS</span><span>地图上的每一个编号，都可以打开。</span></footer>
+  </main>
+
+  <main id="experience" class="experience-screen is-hidden">
+    <div class="experience-heading">
+      <div>
+        <div class="crumb"><button type="button" data-action="home">首页</button><span>/</span><span id="mode-crumb">校园导览</span></div>
+        <h1 id="mode-title">校园导览</h1>
+      </div>
+      <div class="mode-switch" role="group" aria-label="切换浏览方式">
+        <button type="button" class="mode-button" data-action="switch-guided"><span>路线</span>跟我走</button>
+        <button type="button" class="mode-button" data-action="switch-explore"><span>自由</span>自己逛</button>
+      </div>
+    </div>
+
+    <div class="experience-layout">
+      <section class="map-card" aria-label="交互校园地图">
+        <div class="map-card-top">
+          <div class="map-heading"><span class="map-heading-icon"><svg><use href="#i-compass"/></svg></span><div><b>沈阳理工大学</b><small>地图上 1–44 号地点均可点选</small></div></div>
+          <span class="map-badge"><i></i><span id="map-status">校园地图</span></span>
+        </div>
+        <div class="map-viewport" id="map-viewport" aria-label="校园地图，可缩放与拖动">
+          <div class="map-plane" id="map-plane">
+            <img class="campus-art" src="assets/maps/campus-detailed-map.png" alt="">
+            <svg class="route-overlay" id="route-overlay" viewBox="0 0 1024 680" preserveAspectRatio="none" aria-hidden="true">
+              <polyline class="route-line-halo" id="route-halo" points=""></polyline>
+              <polyline class="route-line" id="route-line" points=""></polyline>
+            </svg>
+            <div class="map-pins" id="map-pins"></div>
+          </div>
+          <div class="map-empty-hint" id="map-hint">点击地图上的编号地点<br>查看故事或加入你的路线</div>
+        </div>
+        <div class="map-controls" aria-label="地图缩放">
+          <button type="button" data-action="zoom-in" aria-label="放大地图"><svg><use href="#i-plus"/></svg></button>
+          <button type="button" data-action="zoom-out" aria-label="缩小地图"><svg><use href="#i-minus"/></svg></button>
+          <button type="button" data-action="zoom-reset" aria-label="重置地图"><svg><use href="#i-compass"/></svg></button>
+        </div>
+        <div class="map-legend"><span><i class="legend-dot dot-route"></i>当前路线</span><span><i class="legend-dot dot-place"></i>可选地点</span><span class="map-credit">底图来自用户提供的校园地图</span></div>
+      </section>
+
+      <aside class="guide-card" id="guide-panel" aria-live="polite" aria-label="路线和地点内容"></aside>
+    </div>
+    <footer class="experience-footer"><span>兵器寻迹 · 校园文化数字导览</span><button type="button" data-action="sources">资料与说明 <span>↗</span></button></footer>
+  </main>
+
+  <dialog id="sources-dialog" class="sources-dialog">
+    <div class="dialog-head"><div><span class="dialog-kicker">资料记录</span><h2>资料与使用说明</h2></div><button type="button" class="icon-button" data-action="close-sources" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div>
+    <div class="dialog-content">
+      <p>交互地图使用用户提供的沈阳理工大学详细校园地图，地图标注和热点位置需要以学校实际信息复核。路线线条仅表示本作品中的访问顺序，不代表真实道路导航或步行距离。</p>
+      <h3>博物馆主题参考</h3>
+      <p>展区主题初步参考辽宁省人民防空办公室公开介绍；具体展厅、展品和讲解以现场展签或馆方确认为准。</p>
+      <a href="https://rfb.ln.gov.cn/rfb/rfyw/2022080517100426701/index.shtml" target="_blank" rel="noreferrer">辽宁省人民防空办公室 · 兵器博物馆介绍 ↗</a>
+      <h3>交互模式参考</h3>
+      <ul>
+        <li><a href="https://github.com/MehulChoksey/map-tour-storytelling-template-js" target="_blank" rel="noreferrer">Map Tour Storytelling Template JS</a>：地图上的顺序叙事与逐站浏览。</li>
+        <li><a href="https://github.com/memorymapper/memorymap-toolkit" target="_blank" rel="noreferrer">Memory Map Toolkit</a>：地图热点连接文字、图片和音频内容。</li>
+      </ul>
+      <p class="source-caution">地点说明、照片、展签和录音需经现场核验并确认使用方式。未完成核实的内容以“待核实”或“演示内容”标记。</p>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="scripts/photos.js"></script>
+  <script src="scripts/navigation.js"></script>
+  <script src="scripts/photo-library.js"></script>
+  <script src="scripts/ui-refinements.js"></script>
+  <script src="scripts/project-polish.js"></script>
+</body>
+</html>
+

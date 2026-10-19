@@ -2,15 +2,23 @@
 
 一份可以直接在浏览器中体验的校园数字导览原型。它把**跟随讲解的主题路线**和**自己选点、安排顺序的自由探索**放在同一张校园地图上，带观众从校园入口走到兵器广场与博物馆。
 
+## 在线体验
+
+### [打开「兵器寻迹」在线导览 ↗](https://damn-fuc.github.io/slgu-campus-guide/)
+
+无需下载、安装或登录。评委打开链接后，在首页选择 **跟我走** 查看三条主题路线，或选择 **我想自己逛** 搜索地点、设置起点和终点并规划自己的游览顺序。地点详情可查看影像、故事与科普内容。
+
+建议使用新版 Chrome 或 Edge 浏览器；部分照片来自公开网页，查看时需要联网。
+
 ![沈阳理工大学校园地图预览](assets/maps/campus-detailed-map.png)
 
 > 本项目是数字媒体作品原型，不依赖账号、地图服务或服务器。网页主体由 HTML、CSS 和 JavaScript 构成。
 
 ## 快速体验
 
-1. 下载或克隆本项目。
-2. 用浏览器打开根目录的 `index.html`。
-3. 首页选择 **跟我走** 或 **我想自己逛**。
+1. 优先打开上方的在线体验链接。
+2. 如需离线查看，下载或克隆本项目后，用浏览器打开根目录的 `index.html`。
+3. 首页选择 **跟我走** 或 **我想自己逛**，地图上的编号地点均可点选。
 
 页面不需要安装依赖或构建。部分校园照片来自公开网页，查看这些照片需要联网。
 
@@ -50,9 +58,9 @@
 - 博物馆展区与藏品信息以现场展签和馆方确认为准；未核实内容会标为演示或待核实。
 - 照片来源和使用说明记录在 [`docs/sources.md`](docs/sources.md)、[`docs/photo-sources.md`](docs/photo-sources.md) 与 [`docs/photo-library-attribution.md`](docs/photo-library-attribution.md)。
 
-## 发布到 GitHub Pages
+## 在线发布
 
-本项目是静态网页，可在 GitHub 仓库设置中选择 **Settings → Pages → Deploy from a branch**，然后选择 `main` 分支和仓库根目录 `/`。发布完成后，GitHub 会提供网页访问链接；后续推送到该分支的更新会同步发布。
+本项目已发布到 [GitHub Pages](https://damn-fuc.github.io/slgu-campus-guide/)，网页文件位于仓库根目录，可直接在浏览器访问。更新 `main` 分支后，GitHub Pages 会自动重新发布。
 
 GitHub Pages 的官方说明：[创建 GitHub Pages 网站](https://docs.github.com/en/pages/getting-started-with-github-pages)。
 
@@ -70,4 +78,3 @@ GitHub Pages 的官方说明：[创建 GitHub Pages 网站](https://docs.github.
 - [影像资料记录](docs/photo-library-attribution.md)
 - [导航与故事内容说明](docs/navigation-and-stories.md)
 - [设计稿](docs/superpowers/specs/2026-10-17-weapons-museum-digital-guide-design.md)
-

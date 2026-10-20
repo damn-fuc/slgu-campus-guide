@@ -243,4 +243,6 @@
       return placeStories[Number(number)] || null;
     }
   };
+  const sourceNote = document.querySelector(".source-caution");
+  if (sourceNote) sourceNote.textContent = "地点故事结合沈理工校史公开资料、校园文化与工程科普知识整理，相关出处可在各地点详情中查看。";
 })();

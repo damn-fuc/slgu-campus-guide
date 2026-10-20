@@ -250,7 +250,7 @@
       (knowledge ? '<div class="story-tip"><b>知识提示</b><span>' + escapeHtml(knowledge) + '</span></div>' : '') +
       sourceMarkup +
       (showRouteTools ? routeToolButtons(item) : '') +
-      (item.type === "museum" ? '<button class="museum-entry" type="button" data-action="show-zones">' + icon("book") + '<span><b>浏览博物馆主题</b><small>从展区主题继续探索 · 从展区主题继续了解装备结构与发展</small></span>' + icon("arrow") + '</button>' : '') +
+      (item.type === "museum" ? '<button class="museum-entry" type="button" data-action="show-zones">' + icon("book") + '<span><b>浏览博物馆主题</b><small>从展区主题了解装备发展与工程知识</small></span>' + icon("arrow") + '</button>' : '') +
       (item.type === "exhibit" ? '<div class="verify-tag"><i></i>主题示例，不对应具体实物</div>' : '') +
       '</div><div class="panel-actions">' +
       (isGuidedDetour ? '<button type="button" class="action-button action-primary" data-action="return-guided">' + icon("back") + (currentRoute() ? "回到 " + escapeHtml(currentRoute().title) + " · 第 " + (state.routeStep + 1) + " 站" : "返回路线选择") + '</button>' :

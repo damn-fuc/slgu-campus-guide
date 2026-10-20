@@ -212,7 +212,7 @@
       '<article class="story-stop"><div class="story-stop-meta"><span>第 ' + String(state.routeStep + 1).padStart(2, "0") + ' 站</span><span>地点编号 ' + String(place.mapNumber).padStart(2, "0") + '</span></div>' +
       '<h3>' + escapeHtml(place.name) + '</h3><p>' + escapeHtml(narration) + '</p>' + storySource +
       '<div class="story-tip"><b>知识提示</b><span>' + escapeHtml(knowledge) + '</span></div>' +
-      '<div class="verify-inline">演示讲解 · 地点与说明待现场核实</div></article>' +
+      '</article>' +
       '<p class="panel-hint">地图上的其他地点也可以点开；查看后可回到当前路线进度。</p></div>' +
       '<div class="panel-actions"><button type="button" class="action-button" data-action="speak" data-text="' + escapeHtml(narration) + '">' + icon("volume") + '听讲解</button>' +
       '<div class="step-actions"><button type="button" class="action-button" data-action="prev" ' + (state.routeStep === 0 ? "disabled" : "") + '>上一站</button>' +
@@ -235,7 +235,6 @@
     const isGuidedDetour = mode === "guided";
     const showRouteTools = mode === "explore";
     const label = item.type === "museum" ? "校园博物馆" : item.type === "exhibit" ? "博物馆主题" : item.category;
-    const sourceStatus = item.status === "placeholder" ? "演示内容 · 需馆方确认" : "地点内容待核实";
     const storyData = item.mapNumber ? window.CAMPUS_STORY_PROVIDER?.getStoryForNumber(item.mapNumber) : null;
     const mainCopy = storyData?.story || item.story || item.summary;
     const storyTitle = storyData?.title || item.name + "的故事";
@@ -243,18 +242,15 @@
     const storySource = storyData?.source
       ? '<a class="story-source" href="' + escapeHtml(storyData.source) + '" target="_blank" rel="noopener noreferrer">资料来源：' + escapeHtml(storyData.sourceName || "公开资料") + ' ↗</a>'
       : '';
-    const sourceMarkup = storyData?.source
-      ? ''
-      : '<div class="source-row"><b>地点资料</b><span>' + escapeHtml(item.source || "待补充") + '</span></div>';
+    const sourceMarkup = '';
     return '<div class="panel-scroll detail-panel"><div class="detail-topline"><span>' + escapeHtml(label) +
       '</span>' + (item.mapNumber ? '<b>地图编号 ' + String(item.mapNumber).padStart(2, "0") + '</b>' : '') + '</div>' +
       '<h2 class="panel-title detail-title">' + escapeHtml(item.name) + '</h2><p class="detail-subtitle">' + escapeHtml(item.subtitle || item.category || "博物馆主题") + '</p>' +
       placePhotoMarkup(item) + '<section class="story-accordion-card"><details class="story-accordion"><summary><span class="story-accordion__eyebrow">知识科普 / 地点故事</span><span class="story-accordion__theme">' + escapeHtml(storyTitle) + '</span></summary><div class="story-accordion__body"><p>' + escapeHtml(mainCopy) + '</p>' + storySource + '</div></details></section>' +
       (knowledge ? '<div class="story-tip"><b>知识提示</b><span>' + escapeHtml(knowledge) + '</span></div>' : '') +
-      (item.status !== "confirmed" ? '<div class="verify-tag"><i></i>' + sourceStatus + '</div>' : '') +
       sourceMarkup +
       (showRouteTools ? routeToolButtons(item) : '') +
-      (item.type === "museum" ? '<button class="museum-entry" type="button" data-action="show-zones">' + icon("book") + '<span><b>浏览博物馆主题</b><small>从展区主题继续探索 · 具体展品待核实</small></span>' + icon("arrow") + '</button>' : '') +
+      (item.type === "museum" ? '<button class="museum-entry" type="button" data-action="show-zones">' + icon("book") + '<span><b>浏览博物馆主题</b><small>从展区主题继续探索 · 从展区主题继续了解装备结构与发展</small></span>' + icon("arrow") + '</button>' : '') +
       (item.type === "exhibit" ? '<div class="verify-tag"><i></i>主题示例，不对应具体实物</div>' : '') +
       '</div><div class="panel-actions">' +
       (isGuidedDetour ? '<button type="button" class="action-button action-primary" data-action="return-guided">' + icon("back") + (currentRoute() ? "回到 " + escapeHtml(currentRoute().title) + " · 第 " + (state.routeStep + 1) + " 站" : "返回路线选择") + '</button>' :

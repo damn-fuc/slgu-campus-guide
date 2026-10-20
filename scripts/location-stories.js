@@ -238,4 +238,9 @@
     }
   };
   window.PLACE_STORIES = placeStories;
+  window.CAMPUS_STORY_PROVIDER = {
+    getStoryForNumber(number) {
+      return placeStories[Number(number)] || null;
+    }
+  };
 })();
